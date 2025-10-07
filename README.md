@@ -40,4 +40,4 @@ O site apresenta um design limpo e responsivo, com foco em **experiência do usu
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/SEU_USUARIO/desafio-aulao-git-edtech.git
+   git clone https://github.com/edvannps/desafio-aulao-git-EdTech
