@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Paleta de Cores */
+:root {
+  --turquoise: #0ea5a4;
+  --bronze: #715A5A;
+  --green: #78B9B5;
+  --bg: #f7fbfb;
+  --text: #07323a;
+  --muted: #6b7a78;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+
+.site-header {
+  background: #ffffffcc;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(5px);
+  box-shadow: 5 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-weight: bold;
+  color: var(--turquoise);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+/* Navegação */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.main-nav a:hover {
+  background: var(--green);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--muted); /* Verde escuro aventureiro */
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background-color: var(--green); /* Laranja vibrante */
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: var(--turquoise);
+}
+
+
+/* Botões */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: var(--turquoise);
+  color: white;
+}
+
+.btn-secondary {
+  border: 2px solid var(--bronze);
+  color: var(--bronze);
+}
+
+/* Cards de pacotes */
+.section {
+  padding: 3rem 0;
+}
+
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Rodapé */
+.site-footer {
+  font-weight: 500;
+  padding: 1.5rem 0;
+  text-align: center;
+  background: var(--muted);
+  margin-top: 2rem;
+  color: var(--turquoise);
+}
